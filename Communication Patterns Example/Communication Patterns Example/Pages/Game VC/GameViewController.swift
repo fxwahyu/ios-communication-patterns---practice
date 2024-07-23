@@ -14,7 +14,6 @@ class GameViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var webview: WKWebView!
     @IBOutlet weak var loading: UIActivityIndicatorView!
     
-    var duration: Int = 0
     private let GAME_URL: String = "https://www.games.co.id/permainan/game-hp"
     
     override func viewDidLoad() {

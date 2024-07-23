@@ -15,7 +15,6 @@ class BrowserViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var loading: UIActivityIndicatorView!
     
     private let BROWSER_URL: String = "https://google.com"
-    var duration: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
