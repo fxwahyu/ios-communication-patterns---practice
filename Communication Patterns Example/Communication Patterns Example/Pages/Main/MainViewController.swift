@@ -29,14 +29,6 @@ class MainViewController: UIViewController {
         showButtons(startBtn: false, button1: true, button2: true, choose: false)
     }
     
-    @objc func updateTimer(_ notification: Notification) {
-        let duration = notification.userInfo?["timer"] as? Int ?? 0
-        self.durationLabel.text = setTimerString(number: duration)
-        if duration == 0 {
-            showButtons(startBtn: false, button1: false, button2: false, choose: true)
-        }
-    }
-    
     @objc func openAnimation() {
         let vc = AnimationPage()
         vc.modalPresentationStyle = .overCurrentContext
