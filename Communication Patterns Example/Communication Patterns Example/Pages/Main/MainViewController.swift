@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func chooseDuration(_ sender: Any) {
-        
+        present(ChooseDurationViewController(), animated: true)
     }
     
     @IBAction func startBilling(_ sender: Any) {

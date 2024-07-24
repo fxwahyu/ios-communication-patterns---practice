@@ -17,6 +17,7 @@ final class BillingTimer {
     
     @objc private func timerCountdown() {
         self.duration -= 1
+        if self.duration == 0 { self.timer.invalidate() }
         print("timer:", self.duration)
     }
 }
