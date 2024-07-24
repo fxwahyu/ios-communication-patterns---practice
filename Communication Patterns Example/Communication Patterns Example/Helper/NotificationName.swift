@@ -8,5 +8,8 @@
 import Foundation
 
 class NotificationName {
-    
+    enum Name: String {
+        case TIMER_COUNTING_DOWN = "timer_counting_down"
+        case TIME_IS_UP = "time_is_up"
+    }
 }
